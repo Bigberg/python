@@ -1,0 +1,7 @@
+2017/05/22 13:38:34 atmlog.py-25 ERROR:error2 information
+2017/05/22 13:38:34 atmlog.py-26 INFO:error3 information
+2017/05/22 13:38:34 atmlog.py-27 ERROR:error4 information
+2017/05/23 19:09:24 auth.py-65 ERROR:account [62028888] tries too many login attempts.
+2017/05/23 19:10:48 auth.py-65 ERROR:account [62028888] tries too many login attempts.
+2017/05/25 18:42:33 auth.py-65 ERROR:account [62022222] tries too many login attempts.
+2017/05/31 19:29:29 auth.py-43 ERROR:account [62022222] password is wrong.

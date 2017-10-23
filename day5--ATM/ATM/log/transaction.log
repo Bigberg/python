@@ -1,0 +1,20 @@
+2017/04/27 19:39:22 transaction.py-23 INFO:Account 62028888 repay 2000.0
+2017/04/27 19:43:42 transaction.py-23 INFO:Account 62028888 repay 100.0
+2017/04/27 19:44:16 transaction.py-23 INFO:Account 62028888 withdraw 1000.0
+2017/04/27 19:44:39 transaction.py-23 INFO:Account 62028888 transfer 1000.0
+2017/04/27 19:44:39 main.py-89 INFO:Account 62022222 收到 62028888 转账金额 1000.0
+2017/04/27 19:45:58 transaction.py-23 INFO:Account 62022222 withdraw 2000.0
+2017/04/27 19:46:14 transaction.py-23 INFO:Account 62022222 transfer 3000.0
+2017/04/27 19:46:14 main.py-89 INFO:Account 62028888 收到 62022222 转账金额 3000.0
+2017/04/27 19:46:25 transaction.py-23 INFO:Account 62022222 repay 1000.0
+2017/06/01 18:21:29 transaction.py-23 INFO:Account 62022222 repay 9481.0
+2017/06/01 18:34:04 transaction.py-23 INFO:Account 62022222 repay 1000.0
+2017/06/01 18:34:25 transaction.py-23 INFO:Account 62022222 withdraw 2000.0
+2017/06/01 18:46:38 main.py-89 INFO:Account 62023333 收到 62022222 转账金额 30000.0
+2017/06/01 18:49:02 transaction.py-23 INFO:Account 62022222 transfer 1000.0
+2017/06/01 18:49:02 main.py-89 INFO:Account 62023333 收到 62022222 转账金额 1000.0
+2017/06/01 19:05:52 transaction.py-23 INFO:Account 62022222 repay 1000.0
+2017/06/12 15:00:59 transaction.py-23 INFO:Account 62024444 repay 1000.0
+2017/06/12 15:01:55 transaction.py-23 INFO:Account 62024444 withdraw 2000.0
+2017/06/12 15:05:28 transaction.py-23 INFO:Account 62024444 transfer 3000.0
+2017/06/12 15:05:28 main.py-89 INFO:Account 62022222 收到 62024444 转账金额 3000.0
