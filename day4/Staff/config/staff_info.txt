@@ -1,0 +1,5 @@
+staff_id,name,age,phone,dept,enroll_date
+1,Alex Li,22,13323457894,IT,2013-04-01
+2,Jack Wang,30,13323457899,HR,2015-05-03
+3,Rain Liu,25,13887962376,Sales,2016-04-22
+4,Zhan San,33,1342343324,Police,2015-03-28
