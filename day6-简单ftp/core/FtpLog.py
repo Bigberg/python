@@ -1,6 +1,7 @@
 # -*- coding: UTF-8 -*-
 import os
 import logging
+from logging import handlers
 import configparser
 
 # 路径
@@ -8,7 +9,7 @@ BasePath = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # print(BasePath)
 
 
-class FtpLog(object):
+class FTPLog(object):
     # 读取配置文件信息
     config = configparser.ConfigParser()
     config.read("{}/config/setting.ini".format(BasePath), encoding='utf-8')
@@ -18,7 +19,7 @@ class FtpLog(object):
         self.log_dir = log_dir
 
     # 定义log方法
-    def ftp_log(self, log_type):
+    def ftp_log(self):
         logger = logging.getLogger('ftp-log')
         log_level = self.config['DEFAULT']['LogLevel']
         # print(log_level)
@@ -26,9 +27,9 @@ class FtpLog(object):
 
         # FileHandler
         # 日志保存路径
-        log_path = os.path.join(BasePath, self.log_dir)
+        log_file = os.path.join(BasePath, self.log_dir, 'ftp.log')
 
-        fh = logging.FileHandler("{}/{}.log".format(log_path, log_type))
+        fh = handlers.TimedRotatingFileHandler(filename=log_file, when="midnight", interval=1, backupCount=3, encoding="utf-8")
         fh.setLevel(log_level)
 
         # Formatter
@@ -41,6 +42,6 @@ class FtpLog(object):
 
 
 # if __name__ == '__main__':
-#     f = FtpLog('logs')
-#     my_log = f.ftp_log('error')
-#     my_log.debug("debug information")
+#     f = FTPLog('logs')
+#     my_log = f.ftp_log()
+#     my_log.error("错误信息")
