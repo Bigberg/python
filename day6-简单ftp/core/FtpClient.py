@@ -7,8 +7,8 @@ from modules import login_required
 authentication_data = user.account_data
 
 
+# 定义一个FtpClien类
 class FtpClient(object):
-    # 定义一个FtpClien类
 
     def __init__(self, host, port):
         self.host = host
@@ -57,8 +57,28 @@ class FtpClient(object):
         ftp_client = socket.socket()
         ftp_client.connect((self.host, self.port))
         login_name = auth_data.get('account_name')
-        print(login_name)
+        # print(login_name)
         ftp_client.send(login_name.encode('utf-8'))
+        file_info = ftp_client.recv(1024)
+        print('{}目录下现在的文件：'.format(login_name))
+        print(file_info.decode())
+        print("\n")
+        file_download_name = input('输入你想下载的文件名称:').strip()
+        # 判断文件是否存在
+        file_list = file_info.decode().split('\n')
+        while file_download_name not in file_list:
+            print('该文件不存在,请确认后再输入')
+            file_download_name = input('输入你想下载的文件名称:').strip()
+        else:
+            # print(file_download_name)
+            ftp_client.send(file_download_name.encode('utf-8'))
+            store_dir = input('输入你想存储文件的目录')
+            if not os.path.exists(store_dir):
+                os.makedirs(store_dir)
+            receive_data = ftp_client.recv(1024)
+            file_download_path = os.path.join(store_dir, file_download_name)
+            f_down_write = open(file_download_path, 'wb')
+            f_down_write.write(receive_data)
         ftp_client.close()
 
 # client.close()
@@ -66,4 +86,5 @@ if __name__ == '__main__':
     u = user.User('db')
     u.sign_in(authentication_data)
     client = FtpClient('localhost', 8888)
+    # client.client_upload(authentication_data)
     client.client_download(authentication_data)
