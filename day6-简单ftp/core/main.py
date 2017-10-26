@@ -1,36 +1,42 @@
 # -*- coding: UTF-8 -*-
-from core import role
+from core.user import User
+from core.FtpClient import FtpClient
+from modules import login_required
 
-from config import setting
-authentication_data = setting.authenticated_data
+# 登入认证使用
+account_data = {
+    'account_name': None,
+    'authentication': False
+}
 
 
-@role.BaseModle.login_required
-def pay_tuition(data):
-    s = role.Student('student')
-    s.pay_tuition(data)
+@login_required.login_required
+def upload(data):
+    ftp_client = FtpClient('localhost', 8888)
+    ftp_client.client_upload(data)
 
 
-@role.BaseModle.login_required
-def reset_passwd(data):
-    s = role.Student('student')
-    s.reset_passwd(data)
+@login_required.login_required
+def download(data):
+    ftp_client = FtpClient('localhost', 8887)
+    ftp_client.client_download(data)
 
 
 def login_out(data):
-    print("\033[32m学员{},欢迎下次再使用!\033[0m".format(data['account_id']))
+    print("\033[32m{},欢迎下次再使用!\033[0m".format(data['account_name']))
     exit()
 
 
 def interaction(data):
-    menu = '''--- 课程管理系统 ---
-    \033[32m 1. 交学费
-     2. 修改密码
+
+    menu = '''----- FTP功能 ------
+    \033[32m 1. 上传
+     2. 下载
      3. 退出
------------------------'''
+--------------------'''
     menu_dict = {
-        "1": pay_tuition,
-        "2": reset_passwd,
+        "1": upload,
+        "2": download,
         "3": login_out
     }
     while True:
@@ -43,16 +49,17 @@ def interaction(data):
 
 
 def run():
+    print('欢迎使用FTP'.center(40, '*'))
     choice_list = ['1', '2']
-    s = role.Student('student')
+    u = User('db')
     while True:
         print('\033[32m 1.注册 \n 2.登入')
         choice = input("输入编号选择您所需的功能:").strip()
         if choice in choice_list:
             if choice == '1':
-                s.enroll()
+                u.sign_up()
             else:
-                acc_data = s.login(authentication_data)
+                acc_data = u.sign_in(account_data)
                 if acc_data['authentication']:
                     interaction(acc_data)
         else:

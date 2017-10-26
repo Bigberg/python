@@ -4,7 +4,7 @@ import os
 import struct
 from core import user
 from modules import login_required
-authentication_data = user.account_data
+# authentication_data = user.account_data
 
 
 # 定义一个FtpClien类
@@ -14,7 +14,7 @@ class FtpClient(object):
         self.host = host
         self.port = port
 
-    @login_required.login_required
+    # @login_required.login_required
     def client_upload(self, auth_data):
 
         # 声明协议类型,同时生成socket对象
@@ -49,9 +49,11 @@ class FtpClient(object):
                 # 上传文件
                 ftp_client.send(file_data)
             ftp_client.close()
+            print('正在上传...')
+            print('上传完成...')
 
     # 下载
-    @login_required.login_required
+    # @login_required.login_required
     def client_download(self, auth_data):
         # 声明协议类型,同时生成socket对象
         ftp_client = socket.socket()
@@ -72,19 +74,23 @@ class FtpClient(object):
         else:
             # print(file_download_name)
             ftp_client.send(file_download_name.encode('utf-8'))
-            store_dir = input('输入你想存储文件的目录')
-            if not os.path.exists(store_dir):
-                os.makedirs(store_dir)
+            store_dir = input('输入你想存储文件的目录:')
+            try:
+                if not os.path.exists(store_dir):
+                    os.makedirs(store_dir)
+            except OSError as e:
+                print('输入有误:{}', e)
             receive_data = ftp_client.recv(1024)
             file_download_path = os.path.join(store_dir, file_download_name)
             f_down_write = open(file_download_path, 'wb')
             f_down_write.write(receive_data)
         ftp_client.close()
+        print('下载完成')
 
 # client.close()
-if __name__ == '__main__':
-    u = user.User('db')
-    u.sign_in(authentication_data)
-    client = FtpClient('localhost', 8888)
-    # client.client_upload(authentication_data)
-    client.client_download(authentication_data)
+# if __name__ == '__main__':
+#     u = user.User('db')
+#     u.sign_in(authentication_data)
+#     client = FtpClient('localhost', 8888)
+#     # client.client_upload(authentication_data)
+#     client.client_download(authentication_data)

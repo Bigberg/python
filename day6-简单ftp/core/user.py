@@ -4,7 +4,6 @@ import configparser
 import pickle
 from modules import get_user_infomation
 from core import FtpLog
-from modules import login_required
 
 # 路径
 BasePath = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -13,10 +12,6 @@ config = configparser.ConfigParser()
 config.read("{}/config/setting.ini".format(BasePath), encoding='utf-8')
 # print(config.get('DEFAULT', 'FtpHomeDir'))
 
-account_data = {
-    'account_name': None,
-    'authentication': False
-}
 
 f_log = FtpLog.FTPLog('logs')
 ftp_logger = f_log.ftp_log()
@@ -115,13 +110,13 @@ class User(object):
                     exit()
 
     # 列出ftp用户目录下的文件
-    @login_required.login_required
+    # @login_required.login_required
     def show_files(self, auth_data):
         print("{}目录下的文件".format(auth_data.get('account_name')))
         user_dir = os.path.join(self.ftp_dir, auth_data.get('account_name'))
         os.listdir(user_dir)
 
-if __name__ == '__main__':
-    u = User('db')
-    # u.sign_in(account_data)
-    u.show_files(account_data)
+# if __name__ == '__main__':
+#     u = User('db')
+#     # u.sign_in(account_data)
+#     u.show_files(account_data)

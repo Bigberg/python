@@ -4,7 +4,7 @@
 # 装饰器认证是否通过认证
 def login_required(func):
     def wrapper(*args, **kwargs):
-        if args[1].get('authentication'):
+        if args[0].get('authentication'):
             res = func(*args, **kwargs)
             return res
         else:
