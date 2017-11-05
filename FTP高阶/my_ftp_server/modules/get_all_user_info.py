@@ -16,3 +16,4 @@ def get_user_info(pathname):
 
 # info = get_user_info('..\db')
 # print(info)
+

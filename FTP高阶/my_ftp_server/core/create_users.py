@@ -43,7 +43,7 @@ class User(object):
                 units = ['k', 'K', 'm', 'M', 'g', 'G']
                 while number.isdigit() is not True or unit not in units:
                     print('please input the size like: 10M')
-                    choice = input('请输入磁盘配额,默认10M：').strip()
+                    choice = input('请输入磁盘配额,默认10M[Y/y]：').strip()
                     number = choice[:-1]
                     unit = choice[-1]
 
