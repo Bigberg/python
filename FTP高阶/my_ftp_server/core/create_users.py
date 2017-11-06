@@ -70,6 +70,6 @@ class User(object):
             os.makedirs(user_dir)
 
 
-if __name__ == '__main__':
+def run():
     someone = User()
     someone.user_create()

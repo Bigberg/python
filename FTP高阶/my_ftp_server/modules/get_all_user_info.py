@@ -4,7 +4,7 @@ import os
 import json
 
 
-# 遍历文件夹，获取文件信息
+# 用户db，获取用户信息
 def get_user_info(pathname):
     all_info = []
     for file_name in os.listdir(pathname):

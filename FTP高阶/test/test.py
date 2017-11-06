@@ -7,13 +7,13 @@
 # m.update(b'a')
 # print(m.hexdigest())
 
-import os
-
-dir_info = os.listdir(r'G:\ftp\home\bigberg')
-print(dir_info)
-
-
-KeyboardInterrupt
+# import os
+#
+# dir_info = os.listdir(r'G:\ftp\home\bigberg')
+# print(dir_info)
+#
+#
+# KeyboardInterrupt
 
 #
 # #

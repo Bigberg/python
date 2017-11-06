@@ -168,6 +168,7 @@ class MyTCPHandler(socketserver.BaseRequestHandler):
             self.request.send(b'800')
 
     def mkdir(self, *args):
+        # 创建文件夹
         make_dict = args[0]
         dir_path = make_dict['dir_path']
         os.makedirs(dir_path)
@@ -188,11 +189,12 @@ class MyTCPHandler(socketserver.BaseRequestHandler):
                 func = getattr(self, action)
                 func(cmd_dict)
 
-if __name__ == "__main__":
-    HOST, PORT = "localhost", 9999
+
+def run():
+    host, port = "localhost", 9999
 
     # Create the server, binding to localhost on port 9999
-    server = socketserver.ThreadingTCPServer((HOST, PORT), MyTCPHandler)
+    server = socketserver.ThreadingTCPServer((host, port), MyTCPHandler)
 
     # Activate the server; this will keep running until you
     # interrupt the program with Ctrl-C

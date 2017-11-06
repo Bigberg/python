@@ -300,6 +300,7 @@ class FtpClient(object):
         else:
             print('please input the directory name')
 
+
 def run():
     ftp_client = FtpClient()
     ftp_client.connect('localhost', 9999)
