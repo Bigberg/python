@@ -8,7 +8,7 @@ import sys
 
 class FtpClient(object):
 
-    # 定义工作目录
+    # 定义一个变量存储当前工作目录
     work_path = ''
     # print(work_path)
 
