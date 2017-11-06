@@ -24,9 +24,8 @@ class FtpClient(object):
            cd .. 上一级工作目录
            cd dirname  切换到当前工作目录下的dirname目录
 
-    get -  filename  下载文件
-    put -  G:/ftp/home/***.txt  上传文件
-
+    get -  get filename  下载文件
+    put -  put G:/ftp/home/***.txt  上传文件
     mkdir - mkdir dirname 创建目录
         '''
         print(msg)
@@ -181,6 +180,7 @@ class FtpClient(object):
                     self.client.send(json.dumps(response_msg).encode())
                     try:
                         f = open(file_path + '.temp', 'wb')
+                        f.seek(received_size)
                         while received_size < file_size:
                             if file_size - received_size > 1024:
                                 r_data = self.client.recv(1024)

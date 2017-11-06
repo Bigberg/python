@@ -33,7 +33,7 @@ class User(object):
             repeat_password = input('请重新输入密码:').strip()
         else:
             # 磁盘配额，默认10
-            choice = input('请输入磁盘配额,默认10M：').strip()
+            choice = input('请输入磁盘配额,默认10M[Y/y]：').strip()
 
             if choice.lower() == 'y':
                 self.dir_size = config.get('DEFAULT', 'default_size')
