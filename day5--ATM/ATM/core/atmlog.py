@@ -21,7 +21,9 @@ def atm_log(log_type):
     logger.addHandler(fh)
     return logger
 
-# mylogger = atm_log('error')
-# mylogger.error("error2 information")
-# mylogger.info("error3 information")
-# mylogger.error("error4 information")
+if __name__ == '__main__':
+
+    mylog = atm_log('access')
+    mylog2 = atm_log('error')
+    mylog.info('success')
+    mylog2.error('error info')

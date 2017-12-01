@@ -41,7 +41,7 @@ class FTPLog(object):
         return logger
 
 
-# if __name__ == '__main__':
-#     f = FTPLog('logs')
-#     my_log = f.ftp_log()
-#     my_log.error("错误信息")
+if __name__ == '__main__':
+    f = FTPLog('logs')
+    my_log = f.ftp_log()
+    my_log.info("success")
