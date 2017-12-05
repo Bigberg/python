@@ -40,6 +40,8 @@ def group_and_host_choice():
         host_list = show_hosts(group_list[int(choice_group) - 1])
         for i in range(len(host_list)):
             print(i + 1, ':', host_list[i][0] + '--->' + host_list[i][1])
+        # 需要被执行的主机
+        need_to_handle_list = []
 
         # 选择主机
         choice_host = input("请输入编号选择主机,0表示所有主机:")
@@ -53,12 +55,6 @@ def group_and_host_choice():
                 need_to_handle_list = host_list
             else:
                 # 选择其他编号表示只需处理单台主机
-                need_to_handle_list = host_list[int(choice_host) - 1]
+                need_to_handle_list.append(host_list[int(choice_host) - 1])
 
     return need_to_handle_list
-
-if __name__ == '__main__':
-
-    hosts_list = group_and_host_choice()
-    print(hosts_list)
-

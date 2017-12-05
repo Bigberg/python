@@ -1,6 +1,4 @@
 # -*- coding: UTF-8 -*-
-import os
-import json
 import configparser
 from core.itemlog import item_log
 
@@ -11,7 +9,7 @@ def auth_login():
     # 读取配置文件admin用户信息
     config = configparser.ConfigParser()
     config.read("../conf/setting.ini", encoding='utf-8')
-    user_name = config['DEFAULT']['AdminUser']
+    user_name = config['BASE']['AdminUser']
     user_password = config['BASE']['AdminPassword']
     access_log = item_log('access')
     error_log = item_log('error')
@@ -37,5 +35,5 @@ def auth_login():
         print("您尝试登入次数过多，请稍后登入!")
         return False
 
-if __name__ == '__main__':
-    auth_login()
+# if __name__ == '__main__':
+#     auth_login()

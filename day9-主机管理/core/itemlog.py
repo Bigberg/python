@@ -15,7 +15,7 @@ def item_log(log_type):
     logger.setLevel(log_level)
 
     # FileHandler
-    log_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), config['DEFAULT']['log_path'])
+    log_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), config['BASE']['log_path'])
     log_file = "{}/{}.log".format(log_path, log_type)
     fh = handlers.TimedRotatingFileHandler(filename=log_file, when='midnight', interval=1, backupCount=7,
                                            encoding='utf-8')

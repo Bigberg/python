@@ -1,3 +1,49 @@
-2017/12/01 15:25:43 itemlog.py-35 INFO:success
-2017/12/01 15:26:01 login.py-28 INFO:admin login successfully.
-2017/12/01 15:35:27 login.py-28 INFO:admin login successfully.
+2017/12/05 09:38:33 login.py-26 INFO:admin login successfully.
+2017/12/05 09:54:29 login.py-26 INFO:admin login successfully.
+2017/12/05 10:06:31 login.py-26 INFO:admin login successfully.
+2017/12/05 10:26:08 login.py-26 INFO:admin login successfully.
+2017/12/05 10:28:32 login.py-26 INFO:admin login successfully.
+2017/12/05 10:29:44 login.py-26 INFO:admin login successfully.
+2017/12/05 10:31:12 login.py-26 INFO:admin login successfully.
+2017/12/05 10:31:49 login.py-26 INFO:admin login successfully.
+2017/12/05 10:32:05 login.py-26 INFO:admin login successfully.
+2017/12/05 10:33:37 login.py-26 INFO:admin login successfully.
+2017/12/05 10:33:50 login.py-26 INFO:admin login successfully.
+2017/12/05 10:34:21 login.py-26 INFO:admin login successfully.
+2017/12/05 10:36:49 login.py-26 INFO:admin login successfully.
+2017/12/05 10:38:47 login.py-26 INFO:admin login successfully.
+2017/12/05 10:40:21 login.py-26 INFO:admin login successfully.
+2017/12/05 10:41:02 login.py-26 INFO:admin login successfully.
+2017/12/05 10:42:34 login.py-26 INFO:admin login successfully.
+2017/12/05 10:44:17 login.py-26 INFO:admin login successfully.
+2017/12/05 10:47:08 login.py-26 INFO:admin login successfully.
+2017/12/05 16:01:34 login.py-26 INFO:admin login successfully.
+2017/12/05 16:02:57 login.py-26 INFO:admin login successfully.
+2017/12/05 16:23:53 login.py-26 INFO:admin login successfully.
+2017/12/05 16:27:20 login.py-26 INFO:admin login successfully.
+2017/12/05 16:28:02 login.py-26 INFO:admin login successfully.
+2017/12/05 16:30:56 login.py-26 INFO:admin login successfully.
+2017/12/05 16:33:53 login.py-26 INFO:admin login successfully.
+2017/12/05 16:35:13 login.py-26 INFO:admin login successfully.
+2017/12/05 16:36:29 login.py-26 INFO:admin login successfully.
+2017/12/05 16:37:18 login.py-26 INFO:admin login successfully.
+2017/12/05 17:28:40 login.py-26 INFO:admin login successfully.
+2017/12/05 17:30:51 login.py-26 INFO:admin login successfully.
+2017/12/05 17:31:20 login.py-26 INFO:admin login successfully.
+2017/12/05 17:33:49 login.py-26 INFO:admin login successfully.
+2017/12/05 17:35:01 login.py-26 INFO:admin login successfully.
+2017/12/05 17:37:59 login.py-26 INFO:admin login successfully.
+2017/12/05 17:45:18 login.py-26 INFO:admin login successfully.
+2017/12/05 17:45:18 login.py-26 INFO:admin login successfully.
+2017/12/05 17:50:15 login.py-26 INFO:admin login successfully.
+2017/12/05 17:50:15 login.py-26 INFO:admin login successfully.
+2017/12/05 19:43:15 login.py-26 INFO:admin login successfully.
+2017/12/05 19:43:15 login.py-26 INFO:admin login successfully.
+2017/12/05 19:47:59 sshclient.py-82 INFO:上传文件至主机host2成功
+2017/12/05 19:47:59 sshclient.py-82 INFO:上传文件至主机host2成功
+2017/12/05 19:47:59 sshclient.py-82 INFO:上传文件至主机host1成功
+2017/12/05 19:47:59 sshclient.py-82 INFO:上传文件至主机host1成功
+2017/12/05 19:49:15 login.py-26 INFO:admin login successfully.
+2017/12/05 19:49:15 login.py-26 INFO:admin login successfully.
+2017/12/05 19:49:43 sshclient.py-100 INFO:从主机host1上下载文件成功
+2017/12/05 19:49:43 sshclient.py-100 INFO:从主机host1上下载文件成功
