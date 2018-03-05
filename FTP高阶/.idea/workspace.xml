@@ -31,13 +31,10 @@
       <file leaf-file-name="ftp_client.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/my_ftp_client/core/ftp_client.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="799">
-              <caret line="276" column="29" lean-forward="false" selection-start-line="276" selection-start-column="29" selection-end-line="276" selection-end-column="29" />
+            <state relative-caret-position="459">
+              <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
               <folding>
                 <element signature="e#24#37#0" expanded="true" />
-                <element signature="e#719#1139#0" expanded="false" />
-                <element signature="e#1177#2194#0" expanded="false" />
-                <element signature="e#2234#5130#0" expanded="false" />
                 <element signature="e#5170#8064#0" expanded="false" />
                 <element signature="e#8103#8626#0" expanded="false" />
                 <element signature="e#8665#10499#0" expanded="false" />
@@ -46,14 +43,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ftp_server.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ftp_server.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/my_ftp_server/core/ftp_server.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="17">
-              <caret line="72" column="34" lean-forward="false" selection-start-line="72" selection-start-column="34" selection-end-line="72" selection-end-column="34" />
+              <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
               <folding>
                 <element signature="e#24#43#0" expanded="true" />
-                <element signature="e#703#2419#0" expanded="false" />
                 <element signature="e#2464#3762#0" expanded="false" />
                 <element signature="e#3797#4274#0" expanded="false" />
                 <element signature="e#4309#4621#0" expanded="false" />
@@ -72,11 +68,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="setting.ini" pinned="false" current-in-tab="true">
+      <file leaf-file-name="setting.ini" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/my_ftp_server/config/setting.ini">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="68">
               <caret line="4" column="25" lean-forward="false" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="create_users.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/my_ftp_server/core/create_users.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="544">
+              <caret line="35" column="46" lean-forward="false" selection-start-line="35" selection-start-column="46" selection-end-line="35" selection-end-column="46" />
               <folding />
             </state>
           </provider>
@@ -126,8 +132,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-37" />
-    <option name="y" value="23" />
+    <option name="x" value="23" />
+    <option name="y" value="15" />
     <option name="width" value="1294" />
     <option name="height" value="1080" />
   </component>
@@ -169,6 +175,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="my_ftp_server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FTP高阶" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FTP高阶" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="my_ftp_server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="db" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -278,8 +302,8 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -288,7 +312,7 @@
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
     <property name="js.eslint.eslintPackage" value="" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../untitled/study10" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -638,10 +662,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-37" y="23" width="1294" height="1080" extended-state="1" />
-    <editor active="true" />
+    <frame x="23" y="15" width="1294" height="1080" extended-state="0" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2804878" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29512194" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -700,7 +724,6 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#24#43#0" expanded="true" />
-            <element signature="e#703#2419#0" expanded="false" />
             <element signature="e#2464#3762#0" expanded="false" />
             <element signature="e#3797#4274#0" expanded="false" />
             <element signature="e#4309#4621#0" expanded="false" />
@@ -730,9 +753,6 @@
           <caret line="276" column="29" lean-forward="true" selection-start-line="276" selection-start-column="29" selection-end-line="276" selection-end-column="29" />
           <folding>
             <element signature="e#24#37#0" expanded="true" />
-            <element signature="e#719#1139#0" expanded="false" />
-            <element signature="e#1177#2194#0" expanded="false" />
-            <element signature="e#2234#5130#0" expanded="false" />
             <element signature="e#5170#8064#0" expanded="false" />
             <element signature="e#8103#8626#0" expanded="false" />
             <element signature="e#8665#10499#0" expanded="false" />
@@ -746,7 +766,6 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#24#43#0" expanded="true" />
-            <element signature="e#703#2419#0" expanded="false" />
             <element signature="e#2464#3762#0" expanded="false" />
             <element signature="e#3797#4274#0" expanded="false" />
             <element signature="e#4309#4621#0" expanded="false" />
@@ -776,9 +795,6 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#24#37#0" expanded="true" />
-            <element signature="e#719#1139#0" expanded="false" />
-            <element signature="e#1177#2194#0" expanded="false" />
-            <element signature="e#2234#5130#0" expanded="false" />
             <element signature="e#5170#8064#0" expanded="false" />
             <element signature="e#8103#8626#0" expanded="false" />
             <element signature="e#8665#10499#0" expanded="false" />
@@ -792,9 +808,6 @@
           <caret line="281" column="30" lean-forward="false" selection-start-line="281" selection-start-column="30" selection-end-line="281" selection-end-column="30" />
           <folding>
             <element signature="e#24#37#0" expanded="true" />
-            <element signature="e#719#1139#0" expanded="false" />
-            <element signature="e#1177#2194#0" expanded="false" />
-            <element signature="e#2234#5130#0" expanded="false" />
             <element signature="e#5170#8064#0" expanded="false" />
             <element signature="e#8103#8626#0" expanded="false" />
             <element signature="e#8665#10499#0" expanded="false" />
@@ -808,7 +821,6 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#24#43#0" expanded="true" />
-            <element signature="e#703#2419#0" expanded="false" />
             <element signature="e#2464#3762#0" expanded="false" />
             <element signature="e#3797#4274#0" expanded="false" />
             <element signature="e#4309#4621#0" expanded="false" />
@@ -858,7 +870,6 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#24#43#0" expanded="true" />
-            <element signature="e#703#2419#0" expanded="false" />
             <element signature="e#2464#3762#0" expanded="false" />
             <element signature="e#3797#4274#0" expanded="false" />
             <element signature="e#4309#4621#0" expanded="false" />
@@ -872,9 +883,6 @@
           <caret line="54" column="28" lean-forward="true" selection-start-line="54" selection-start-column="28" selection-end-line="54" selection-end-column="28" />
           <folding>
             <element signature="e#24#37#0" expanded="true" />
-            <element signature="e#719#1139#0" expanded="false" />
-            <element signature="e#1177#2194#0" expanded="false" />
-            <element signature="e#2234#5130#0" expanded="false" />
             <element signature="e#5170#8064#0" expanded="false" />
             <element signature="e#8103#8626#0" expanded="false" />
             <element signature="e#8665#10499#0" expanded="false" />
@@ -902,7 +910,6 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#24#43#0" expanded="true" />
-            <element signature="e#703#2419#0" expanded="false" />
             <element signature="e#2464#3762#0" expanded="false" />
             <element signature="e#3797#4274#0" expanded="false" />
             <element signature="e#4309#4621#0" expanded="false" />
@@ -916,9 +923,6 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#24#37#0" expanded="true" />
-            <element signature="e#719#1139#0" expanded="false" />
-            <element signature="e#1177#2194#0" expanded="false" />
-            <element signature="e#2234#5130#0" expanded="false" />
             <element signature="e#5170#8064#0" expanded="false" />
             <element signature="e#8103#8626#0" expanded="false" />
             <element signature="e#8665#10499#0" expanded="false" />
@@ -932,9 +936,6 @@
           <caret line="60" column="51" lean-forward="false" selection-start-line="60" selection-start-column="51" selection-end-line="60" selection-end-column="51" />
           <folding>
             <element signature="e#24#37#0" expanded="true" />
-            <element signature="e#719#1139#0" expanded="false" />
-            <element signature="e#1177#2194#0" expanded="false" />
-            <element signature="e#2234#5130#0" expanded="false" />
             <element signature="e#5170#8064#0" expanded="false" />
             <element signature="e#8103#8626#0" expanded="false" />
             <element signature="e#8665#10499#0" expanded="false" />
@@ -983,7 +984,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-3072">
           <caret line="297" column="4" lean-forward="false" selection-start-line="297" selection-start-column="4" selection-end-line="297" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1049,13 +1049,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/my_ftp_server/core/create_users.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="35" column="46" lean-forward="false" selection-start-line="35" selection-start-column="46" selection-end-line="35" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/my_ftp_client/bin/client_start.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -1070,6 +1063,35 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/my_ftp_server/config/setting.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="25" lean-forward="false" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my_ftp_server/core/create_users.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="35" column="46" lean-forward="false" selection-start-line="35" selection-start-column="46" selection-end-line="35" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my_ftp_client/core/ftp_client.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+          <folding>
+            <element signature="e#24#37#0" expanded="true" />
+            <element signature="e#5170#8064#0" expanded="false" />
+            <element signature="e#8103#8626#0" expanded="false" />
+            <element signature="e#8665#10499#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/my_ftp_server/bin/newuser.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -1078,41 +1100,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/my_ftp_client/core/ftp_client.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="799">
-          <caret line="276" column="29" lean-forward="false" selection-start-line="276" selection-start-column="29" selection-end-line="276" selection-end-column="29" />
-          <folding>
-            <element signature="e#24#37#0" expanded="true" />
-            <element signature="e#719#1139#0" expanded="false" />
-            <element signature="e#1177#2194#0" expanded="false" />
-            <element signature="e#2234#5130#0" expanded="false" />
-            <element signature="e#5170#8064#0" expanded="false" />
-            <element signature="e#8103#8626#0" expanded="false" />
-            <element signature="e#8665#10499#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/my_ftp_server/core/ftp_server.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
-          <caret line="72" column="34" lean-forward="false" selection-start-line="72" selection-start-column="34" selection-end-line="72" selection-end-column="34" />
+          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
           <folding>
             <element signature="e#24#43#0" expanded="true" />
-            <element signature="e#703#2419#0" expanded="false" />
             <element signature="e#2464#3762#0" expanded="false" />
             <element signature="e#3797#4274#0" expanded="false" />
             <element signature="e#4309#4621#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/my_ftp_server/config/setting.ini">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="25" lean-forward="false" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
